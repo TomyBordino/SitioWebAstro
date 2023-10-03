@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #323232;
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    font-size: 2.6rem;
+}
+
+/*
+h2{
+  font-family: 'Carter One', cursive;
+  text-align: center;
+  font-size: 2rem;
+}*/
+
+h3{
+  font-family: 'Carter One', cursive;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    padding-top: 20px;
+    gap: 3rem;
+    font-family: 'Carter One', cursive;
+    font-size: 1.2rem;
+}
+
+.confRightHeader{
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.iconRedes{
+  font-size: 2rem;
+}
+
+.iconPosition{
+  font-size: 2rem;
+  margin-top: 15px;
+}
+
+.menuFooter{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    
+    
+    font-family: 'Carter One', cursive;
+    font-size: 1.2rem;
+}
+/*
+.menu-link {
+    color: #323232;
+}
+*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 1rem 6rem;
+}
+
+.headerImg{
+  height: 100px;
+  padding: 1rem 6rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 100px;
+    padding: 6rem 6rem;
+    
+}
+
+.button-buscar{
+    border-radius: 15px;
+    height: 25px;
+    font-family: 'Carter One', cursive;
+}
+
+.button-buscar:hover{
+    background-color: #ECE9E9;
+    
+}
+
+.imagenInicio{
+    width: 100%;
+    height: 1500px;
+}
+
+/*Barra De Busqueda*/
+
+.input-container {
+    width: 220px;
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: calc(50% + 5px);
+    transform: translateY(calc(-50% - 5px));
+  }
+  
+  .input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    transition: .2s linear;
+    border: 2.5px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .input:focus {
+    outline: none;
+    border: 0.5px solid black;
+    box-shadow: -5px -5px 0px #4E008E;
+  }
+  
+  .input-container:hover > .icon {
+    animation: anim 1s linear infinite;
+  }
+  
+  @keyframes anim {
+    0%,
+    100% {
+      transform: translateY(calc(-50% - 5px)) scale(1);
+    }
+  
+    50% {
+      transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+  }
+
+  .containerSN{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+  }
+
+  .bloqueSNImg{
+    width: 900px;
+    text-align: right;
+  }
+
+  .imgSN{
+    border-radius: 20px;
+  }
+  
+  .bloqueSNText{
+    width: 900px;
+    text-align: left;
+    font-family: 'Carter One', cursive;
+    font-size: 1.2rem;
+  }
+
+  .mapContacto{
+    text-align: center;
+   
+  }
+
+  .map{
+    border-radius: 25px;
+  }
+
+  .containerPreguntas{
+    padding-top: 70px;
+    width: 900px;
+    text-align: center;
+  }
+
+  .containerAyuda{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .containerCYD{
+    width: 900px;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .card {
+    box-sizing: border-box;
+    width: 350px;
+    height: 490px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+  }
+  
+  .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    /*display: block;*/
+  }
+
+  .card:hover .CajaProductosShopShadow{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    background-color: #FAF8F7
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .contentCardShop{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+    width: 1400px;
+  }
+
+.imgCard{
+    height: 100%;
+    width: 100%;
+    border-radius: 17px;
+  }
+
+  .CajaProductosShopShadow{
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: #4E008E;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    
+  }
+  .containerAyuda2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
