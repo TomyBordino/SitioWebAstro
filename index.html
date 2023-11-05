@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-
+    <title>Tienda Online Astro</title>
+    <meta name="description"
+        content="Descrubri un nuevo estilo de vida con nuestras prendas, vestite a la moda y disfruta cada momento a la moda">
+    <meta name="keywords" content="Buzos, Hoodies, Ropa, Remeras, Remerones, Moda, Estilo, Prendas, Descubri">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -24,7 +26,7 @@
     <header class="headerConf">
 
         <nav class="navbar navbar-expand-xxl">
-            <div class="container-fluid">
+            <div class="container-fluid g-0">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -46,7 +48,7 @@
 
                     <div class="offcanvas-body justify-content-md-around  align-items-center">
                         <div>
-                            <img class="headerImg headerShadowOcultar" src="imagenes/Logo.png" alt="">
+                            <img class="headerImg headerShadowOcultar" src="imagenes/Logo.png" alt="Astro Logo">
                         </div>
                         <div>
                             <ul class="navbar-nav justify-content-end menu ">
@@ -59,8 +61,8 @@
                                         Shop
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Buzos</a></li>
-                                        <li><a class="dropdown-item" href="#">Remeras</a></li>
+                                        <li><a class="dropdown-item" href="pages/shop.html">Buzos</a></li>
+                                        <li><a class="dropdown-item" href="pages/shop.html">Remeras</a></li>
 
                                     </ul>
                                 </li>
@@ -114,7 +116,7 @@
 
                 </div>
                 <div>
-                    <img class="headerImg headerShadow" src="imagenes/Logo.png" alt="">
+                    <img class="headerImg headerShadow" src="imagenes/Logo.png" alt="Astro Logo">
                 </div>
             </div>
         </nav>
@@ -123,43 +125,192 @@
 
     <main>
 
-        <div class="container-fluid">
-            <img class="imagenInicio" src="imagenes/Foto Inicio.jpg" alt="">
+        <div class="container-fluid g-0">
+            <img class="imagenInicio" src="imagenes/Foto Inicio2.jpg" alt="Imagen Fondo Inicio">
         </div>
 
 
+        <!-- Banner Info -->
+        <div class="info-inicio">
+            <div class="container text-center ">
+                <div class="row g-0">
+                    <div class="col-12 col-md-6 text-light confInfoBanner">
+                        <div class="row align-items-flex-star mx-">
+                            <div><i class="bi bi-credit-card display-6"></i></div>
 
-        <!-- -------------------------------------------->
-        <div class="d-flex justify-content-center mt-2">
-            <div class="card">
-                <div class="icon__Card__Inicio">
-                    <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11.984 16.815c2.596 0 4.706-2.111 4.706-4.707 0-1.409-.623-2.674-1.606-3.538-.346-.303-.735-.556-1.158-.748-.593-.27-1.249-.421-1.941-.421s-1.349.151-1.941.421c-.424.194-.814.447-1.158.749-.985.864-1.608 2.129-1.608 3.538 0 2.595 2.112 4.706 4.706 4.706zm.016-8.184c1.921 0 3.479 1.557 3.479 3.478 0 1.921-1.558 3.479-3.479 3.479s-3.479-1.557-3.479-3.479c0-1.921 1.558-3.478 3.479-3.478zm5.223.369h6.777v10.278c0 2.608-2.114 4.722-4.722 4.722h-14.493c-2.608 0-4.785-2.114-4.785-4.722v-10.278h6.747c-.544.913-.872 1.969-.872 3.109 0 3.374 2.735 6.109 6.109 6.109s6.109-2.735 6.109-6.109c.001-1.14-.327-2.196-.87-3.109zm2.055-9h-12.278v5h-1v-5h-1v5h-1v-4.923c-.346.057-.682.143-1 .27v4.653h-1v-4.102c-1.202.857-2 2.246-2 3.824v3.278h7.473c1.167-1.282 2.798-2 4.511-2 1.722 0 3.351.725 4.511 2h7.505v-3.278c0-2.608-2.114-4.722-4.722-4.722zm2.722 5.265c0 .406-.333.735-.745.735h-2.511c-.411 0-.744-.329-.744-.735v-2.53c0-.406.333-.735.744-.735h2.511c.412 0 .745.329.745.735v2.53z">
-                        </path>
-                    </svg>
+                            <div>
+                                <h5>3 y 6 Cuotas sin interes</h5>
+                                <p>Con tarjetas de Credito de todos los bancos</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 text-light confInfoBanner">
+                        <div><i class="bi bi-truck display-6"></i></div>
+
+                        <div>
+                            <h5>Envios a todo el pais</h5>
+                            <p>Envio Gratis en Compras Superiores a $40000</p>
+                        </div>
+                    </div>
+
                 </div>
-                <strong> Instagram
-                </strong>
-                <div class="card__body__Inicio">
-                    Get UI elements that help you stand out.
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------>
+
+        <div class="mt-5">
+            <h1>Destacados</h1>
+        </div>
+
+        <!-- Destacados Productos -->
+
+
+        <div class="containerAyuda">
+            <div class="contentCardShop contentCardShopInicio">
+                <div class="cardShop">
+
+                    <img class="imgCard" src="../imagenes/Buzo1.png" alt="">
+
+                    <div class="ps-2 pt-2">
+                        <p>Buzo Astro White</p>
+                    </div>
+
+                    <div class="ps-2 priceConf">
+                        <p>$25.000</p>
+                    </div>
+                    <div class="CajaProductosShopShadow ps-2">
+                        <button class="buttonShop">COMPRAR </button>
+                    </div>
+
                 </div>
-                <span>Follow us</span>
+
+                <div class="cardShop">
+                    <img class="imgCard" src="../imagenes/Buzo2.png" alt="">
+
+                    <div class="ps-2 pt-2">
+                        <p>Buzo Astro</p>
+                    </div>
+
+                    <div class="ps-2 priceConf">
+                        <p>$23.000</p>
+                    </div>
+                    <div class="CajaProductosShopShadow ps-2">
+                        <button class="buttonShop">COMPRAR </button>
+                    </div>
+                </div>
+
+                <div class="cardShop">
+                    <img class="imgCard" src="../imagenes/Buzo3.png" alt="">
+
+                    <div class="ps-2 pt-2">
+                        <p>Buzo Astro Black</p>
+                    </div>
+
+                    <div class="ps-2 priceConf">
+                        <p>$24.000</p>
+                    </div>
+                    <div class="CajaProductosShopShadow ps-2">
+                        <button class="buttonShop">COMPRAR </button>
+                    </div>
+                </div>
+                <div class="cardShop">
+                    <img class="imgCard" src="../imagenes/Buzo4.png" alt="">
+
+                    <div class="ps-2 pt-2">
+                        <p>Hoodie Astro White </p>
+                    </div>
+
+                    <div class="ps-2 priceConf">
+                        <p>$30.000</p>
+                    </div>
+                    <div class="CajaProductosShopShadow ps-2">
+                        <button class="buttonShop">COMPRAR </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------------------>
+
+        <!-- Destacados Seccions -->
+        <div class="containerAyuda contenedorCentradoTextImg ">
+            <div class="contentCardDestacadosSeccion mb-5 pb-5 border-bottom border-1">
+                <div class="card-Inicio-Secciones contenedorCentradoTextImg sombra">
+                    <a href="pages/shop.html">
+                        <img class="imgCardInicio" src="imagenes/Buzo2.png" alt="Imagen Destacados Buzos">
+                        <h2 class="centrado">BUZOS</h2>
+                    </a>
+
+                </div>
+                <div class="card-Inicio-Secciones contenedorCentradoTextImg sombra">
+                    <a href="pages/shop.html">
+                        <img class="imgCardInicio" src="imagenes/Buzo3.png" alt="Imagen Destacados Remeras ">
+                        <h2 class="centrado">REMERAS</h2>
+                    </a>
+                </div>
+
             </div>
 
-
         </div>
+
+        <!-- ------------------------------------------------------------------>
+        <!-- --------------------Info---------------------------------------------->
+
+        <div class="containerMasInfo">
+            <div class="container-fluid g-0 text-center">
+                <div class="row g-0">
+                    <div class="col-6 col-md-3 display-6 border-end border-1 ">
+                        <i class="bi bi-shop"></i>
+                        <p class="mt-2">Retira en el Local</p>
+                        <button type="button" class="btn btn-link text-black  link-underline-light">Ver Mas</button>
+                    </div>
+                    <div class="col-6 col-md-3 display-6 border-end border-1">
+                        <i class="bi bi-box-fill"></i>
+                        <p class="mt-2">Cambios y Devoluciones</p>
+                        <button type="button" class="btn btn-link text-black link-underline-light">Ver Mas</button>
+                    </div>
+                    <div class="col-6 col-md-3 display-6 border-end border-1">
+                        <i class="bi bi-truck"></i>
+                        <p class="mt-2">Envios y Seguimiento</p>
+                        <button type="button" class="btn btn-link text-black  link-underline-light">Ver Mas</button>
+                    </div>
+                    <div class="col-6 col-md-3 display-6">
+                        <i class="bi bi-wallet2"></i>
+                        <p class="mt-2">Metodos de Pago</p>
+                        <button type="button" class="btn btn-link text-black  link-underline-light">Ver Mas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------------------>
+
+        <!-- -------------------NewsLetter----------------------------------------------->
+        <div class="containerNewsletter mt-4">
+            <h3 class="">Suscribite a Nuestro NewsLetter</h3>
+            <p>y accede a beneficios increibles</p>
+            <div class="input-container">
+                <input placeholder="Ingresa tu Email" class="input-field" type="text">
+                <label for="input-field" class="input-label"></label>
+                <span class="input-highlight"></span>
+              </div>
+              <button type="button" class="btn btn-dark">Suscribirse</button>
+              
+        </div>
+
+        <!-- -------------------------------------------->
     </main>
 
 
-    <!-- #region -->
-    <footer class="border-top border-4 border-black mt-2">
+    <!-- Footer -->
+    <footer class="mt-2">
 
 
         <div class="text-center">
             <div class="row g-0 pb-3">
                 <div class="col-12 col-md-6 col-xl-3">
-                    <img class="headerImg" src="imagenes/Logo.png" alt="">
+                    <img class="headerImg" src="imagenes/Logo.png" alt="Imagen Logo Footer">
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 menuFooter">
                     <h3>Menu</h3>
