@@ -553,10 +553,22 @@ h3{
     }
   }
 
-  @media (max-width:768px){
+  @media (max-width:762px){
     .info-inicio{
       
-      height: 250px;
+      height: 120px;
+    }
+
+    .ocultarInfoBanner{
+      display: none;
+    }
+
+    .info-inicio h5{
+      font-size: 1rem;
+    }
+
+    .info-inicio p{
+      font-size: 0.8rem;
     }
 
     
