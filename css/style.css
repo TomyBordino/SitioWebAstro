@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Noto+Serif:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Noto+Serif:ital@1&display=swap');
 
 
 *{
@@ -18,28 +18,29 @@ p{
   font-size: 1rem;
 }
 
-
 h1{
     text-align: center;
-    font-family:'Noto Serif';
+    font-family:'Merriweather';
     font-size: 2rem;
+    
 }
 
 
 h2{
-  font-family:'Noto Serif';
+  font-family:'Merriweather';
   text-align: center;
   font-size: 2rem;
+  
 }
 
 .titleAyuda{
-  font-family:'Noto Serif';
+  font-family:'Merriweather';
   text-align: center;
   font-size: 2rem;
 }
 
 h3{
-  font-family:'Noto Serif';
+  font-family:'Merriweather';
   text-align: center;
   font-size: 2rem;
 }
@@ -56,7 +57,7 @@ h3{
     display: flex;
     padding-top: 20px;
     gap: 3rem;
-    font-family: 'Carter One', cursive;
+    font-family: 'Merriweather';
     font-size: 1.2rem;
 }
 
@@ -81,7 +82,7 @@ h3{
 
 .iconPosition{
   font-size: 2rem;
-  margin-top: 15px;
+  margin-top: 32px;
 }
 
 .input-container {
@@ -145,31 +146,18 @@ h3{
     font-family:'Noto Serif';
     font-size: 1.2rem;
 }
-/*
-.configFooter{
-  display: flex;
-  flex-direction: row;
-}*/
 
-
-/*-------------------------------*/
-
-/*
-.button-buscar{
-    border-radius: 15px;
-    height: 25px;
-    font-family: 'Carter One', cursive;
-}
-
-.button-buscar:hover{
-    background-color: #ECE9E9;
-    
-}*/
 
 /*Inicio*/
 .imagenInicio{
     width: 100%;
     
+}
+
+
+
+.imagenInicioShadow{
+  display: none;
 }
 
 .imgCardInicio{
@@ -370,9 +358,7 @@ h3{
   height: 580px;
   background: white;
   border: 1px solid white;
-  /*box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);*/
   backdrop-filter: blur(6px);
-  /*border-radius: 17px;*/
   text-align: center;
   cursor: pointer;
   transition: all 0.4s;
@@ -438,28 +424,6 @@ h3{
   
   overflow: hidden;
  }
- 
- /*
- .buttonShop::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  border-radius: 5px;
-  background-color: #212121;
-  z-index: -1;
-
-  transition: all 250ms
- }
- 
- 
- .buttonShop:hover {
-  color: #e8e8e8;
- }
- */
-
 
 /*--------------------------------*/
 
@@ -475,16 +439,6 @@ h3{
     border-radius: 20px;
     
   }
-
-
-  /*
-  .bloqueSNText{
-    width: 900px;
-    text-align: left;
-    font-family: 'Carter One', cursive;
-    font-size: 1.2rem;
-  }
-*/
 
 
 /*--------------------------------*/
@@ -516,16 +470,8 @@ h3{
 
   .containerCYD{
     width: 900px;
-    text-align: center;
     padding-top: 60px;
   }
-
-  /*
-  .containerAyuda2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }*/
 
   /*----------------------------------*/
 
@@ -557,6 +503,12 @@ h3{
     .info-inicio{
       
       height: 120px;
+    }
+    .imagenInicioShadowPrincipal{
+      display: none;
+    }
+    .imagenInicioShadow{
+      display: block;
     }
 
     .ocultarInfoBanner{

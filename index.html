@@ -7,14 +7,13 @@
     <title>Tienda Online Astro</title>
     <meta name="description"
         content="Descrubri un nuevo estilo de vida con nuestras prendas, vestite a la moda y disfruta cada momento a la moda">
-    <meta name="keywords" content="Buzos, Hoodies, Ropa, Remeras, Remerones, Moda, Estilo, Prendas, Descubri">
 
+    <meta name="keywords" content="Buzos, Hoodies, Ropa, Remeras, Remerones, Moda, Estilo, Prendas, Descubri">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon">
 
 
@@ -56,8 +55,9 @@
                                     <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="pages/shop.html" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle list-group-item list-group-item-action mt-2"
+                                        href="pages/shop.html" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
                                         Shop
                                     </a>
                                     <ul class="dropdown-menu">
@@ -126,8 +126,10 @@
     <main>
 
         <div class="container-fluid g-0">
-            <!-- Queda Pendiente mejorar la imagen en Mobile -->
-            <img class="imagenInicio" src="imagenes/Foto Inicio2.jpg" alt="Imagen Fondo Inicio">
+            
+            <img class="imagenInicio imagenInicioShadowPrincipal" src="imagenes/Foto Inicio2.jpg"
+                alt="Imagen Fondo Inicio">
+            <img class="imagenInicio imagenInicioShadow" src="imagenes/FotoSN.jpg" alt="Imagen Fondo Inicio Mobile">
         </div>
 
 
@@ -169,7 +171,7 @@
 
         <div class="containerAyuda">
             <div class="contentCardShop contentCardShopInicio">
-                <div class="cardShop">
+                <div class="cardShop" data-aos="fade-up" data-aos-duration="1500">
 
                     <img class="imgCard" src="imagenes/Buzo1.png" alt="">
 
@@ -186,7 +188,7 @@
 
                 </div>
 
-                <div class="cardShop">
+                <div class="cardShop" data-aos="fade-up" data-aos-duration="1500">
                     <img class="imgCard" src="imagenes/Buzo2.png" alt="">
 
                     <div class="ps-2 pt-2">
@@ -201,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="cardShop">
+                <div class="cardShop" data-aos="fade-up" data-aos-duration="1500">
                     <img class="imgCard" src="imagenes/Buzo3.png" alt="">
 
                     <div class="ps-2 pt-2">
@@ -215,7 +217,7 @@
                         <button class="buttonShop">COMPRAR </button>
                     </div>
                 </div>
-                <div class="cardShop">
+                <div class="cardShop" data-aos="fade-up" data-aos-duration="1500">
                     <img class="imgCard" src="imagenes/Buzo4.png" alt="">
 
                     <div class="ps-2 pt-2">
@@ -237,14 +239,16 @@
         <!-- Destacados Seccions -->
         <div class="containerAyuda contenedorCentradoTextImg ">
             <div class="contentCardDestacadosSeccion mb-5 pb-5 border-bottom border-1">
-                <div class="card-Inicio-Secciones contenedorCentradoTextImg sombra">
+                <div class="card-Inicio-Secciones contenedorCentradoTextImg sombra" data-aos="fade-up"
+                    data-aos-duration="2000">
                     <a href="pages/shop.html">
                         <img class="imgCardInicio" src="imagenes/Buzo2.png" alt="Imagen Destacados Buzos">
                         <h2 class="centrado">BUZOS</h2>
                     </a>
 
                 </div>
-                <div class="card-Inicio-Secciones contenedorCentradoTextImg sombra">
+                <div class="card-Inicio-Secciones contenedorCentradoTextImg sombra" data-aos="fade-up"
+                    data-aos-duration="2000">
                     <a href="pages/shop.html">
                         <img class="imgCardInicio" src="imagenes/Buzo3.png" alt="Imagen Destacados Remeras ">
                         <h2 class="centrado">REMERAS</h2>
@@ -295,9 +299,9 @@
                 <input placeholder="Ingresa tu Email" class="input-field" type="text">
                 <label for="input-field" class="input-label"></label>
                 <span class="input-highlight"></span>
-              </div>
-              <button type="button" class="btn btn-dark">Suscribirse</button>
-              
+            </div>
+            <button type="button" class="btn btn-dark">Suscribirse</button>
+
         </div>
 
         <!-- -------------------------------------------->
@@ -305,10 +309,10 @@
 
 
     <!-- Footer -->
-    <footer class="mt-2">
+    <footer class="mt-4">
 
 
-        <div class="text-center">
+        <div class="text-center mt-4">
             <div class="row g-0 pb-3">
                 <div class="col-12 col-md-6 col-xl-3">
                     <img class="headerImg" src="imagenes/Logo.png" alt="Imagen Logo Footer">
@@ -334,7 +338,10 @@
     </footer>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

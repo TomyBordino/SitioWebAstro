@@ -22,7 +22,7 @@
 <body>
     <header class="headerConf">
         <nav class="navbar navbar-expand-xxl ">
-            <div class="container-fluid">
+            <div class="container-fluid g-0">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -52,8 +52,8 @@
                                     <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="shop.html" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle list-group-item list-group-item-action mt-2"
+                                        href="shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Shop
                                     </a>
                                     <ul class="dropdown-menu">
@@ -122,78 +122,79 @@
     <main>
 
         <h1>Ayuda</h1>
-
-
-
-
-
         <div class="containerAyuda">
             <div class="containerPreguntas px-2">
                 <h2 class="titleAyuda">Preguntas Frecuentes</h2>
 
-
-                <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseOne">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
                                 Como saber cual es mi talle?
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                            aria-labelledby="panelsStayOpen-headingOne">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                <p>Te dejamos el cuadro con las medidas de nuestros buzos para que puedas ver cual es el
+                                    mejor para vos</p>
+                                <img class="imgCard"
+                                    src="https://d22fxaf9t8d39k.cloudfront.net/descripciones/e16717b81d1aa578964d31536d8638ed0009c793b83826bc5f0c251d3ce12e97224802.png"
+                                    alt="">
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseTwo">
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
                                 Cuales son los metodos de Pago?
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingTwo">
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                until the collapse plugin adds the appropriate classes that we use to style each
-                                element. These classes control the overall appearance, as well as the showing and hiding
-                                via CSS transitions. You can modify any of this with custom CSS or overriding our
-                                default variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                <p>Para las compras online, contamos con todas las tarjetas de créditos, débito, Mercado
+                                    Pago.</p>
+                                Podrás visualizarlas de esta manera al momento de cerrar tu compra:
+                                <img class="imgCard"
+                                    src="https://lh5.googleusercontent.com/IfYND8mADx-KN3JMwE3X0bJPY1rdf_zx6HUkiTGf0QZkB0v2qyDM4vIRs99B4SbkT0CRFFug9Piw-9-_0TmE2qjf3FDtX5jM9XnKoJK_A4ZWmHs8EnGcDJBUC6wA2wfw3c-Y1RAQo6-FiFtlDsM2sZiZmh2zpOLDb_XmbLE88KWbFpTXg_cY8a8gDw"
+                                    alt="">
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
                                 Como realizar mi pedido?
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingThree">
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                <p>Te dejamos los pasos para hacer una compra en nuestra página web :</p>
+
+                                <p>Elegí la categoría que estás buscando</p>
+                                <p>Seleccionás tus preferencias de talle y hacés click en AGREGAR AL CARRITO.🛒</p>
+
+                                <p>Una vez que estás en el carrito de compras, podés seguir comprando o avanzar haciendo
+                                    click en INICIAR COMPRA.</p>
+                                <p>Completa tus datos de contacto y hacé click en CONTINUAR.</p>
+                                <p>Seleccioná el método de envío que desees y hacé clic en CONTINUAR 🚚.</p>
+                                <p>Elegí el método de pago y completá los datos. Hacé click en INICIAR PAGO. 💳</p>
+                                <p>Listo! Vas e recibir el mail de confirmación de compras en tu e-mail! En caso de no
+                                    recibirlo te pedimos que revises la casilla de correo no deseado, spam o promociones
+                                    😉.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -203,19 +204,66 @@
         <div class="containerAyuda ">
             <div class="containerCYD px-2">
                 <h3>Cambios y Devoluciones</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam a molestiae odio. Magnam quam
-                    aliquam,
-                    sint id quis labore omnis alias soluta nesciunt atque vero earum accusamus iusto iste fugit unde
-                    cumque
-                    quod. Fugit voluptatibus minus quia nesciunt sit corrupti, aliquid consectetur ea adipisci provident
-                    eaque
-                    molestiae quo quam odio maxime repellendus amet sequi sapiente natus velit nulla quod suscipit
-                    reiciendis?
-                    Facilis laboriosam ut inventore numquam minus laborum aspernatur. Ipsum neque maxime, asperiores
-                    suscipit
-                    numquam possimus vero quasi eveniet aperiam tempora veniam vitae magnam porro ullam et ducimus. Cum
-                    nam,
-                    accusamus accusantium omnis ipsa quidem eveniet explicabo sapiente nostrum. Laborum!</p>
+                <p>En KING OF THE KONGO queremos que puedas disfrutar plenamente de tus productos. Te ofrecemos un
+                    proceso
+                    rápido, ágil y sencillo para que puedas cambiar o devolver tu producto.</p>
+
+
+                <h4>¿Cómo realizo un cambio o devolución?</h4>
+
+                <p>Para comenzar solo tenés que presionar el botón “cambiar/devolver un producto” y seguir los pasos:
+                </p>
+
+                <p>Busca tu orden con el número de la misma y el mail que utilizaste en tu compra</p>
+                <p>Selecciona el/los productos que queres cambiar o devolver</p>
+                <p>Elegí como queres hacernos llegar los productos. Podes hacernos llegar los productos a nuestro
+                    depósito,
+                    realizar el cambio en nuestro local de Palermo o coordinar la manera que te resulte más cómoda.
+                </p>
+                <p>Una vez que recibamos tus productos, en 48 hs. procesaremos la orden y procederemos a enviarte tu
+                    nuevo producto o efectuarte el reembolso correspondiente.</p>
+
+                <h4>¿Qué tengo que tener en cuenta?</h4>
+
+
+
+                <p>Tenés 30 días corridos desde que realizaste la compra para cambios y 10 días para devoluciones</p>
+                
+                <p>Deberás presentar el ticket de compra o cambio. En caso de compras online, la factura electrónica o
+                    acreditar el número de orden.</p>
+
+                <p>Los productos deben estar en perfecto estado y con todas las etiquetas originales.</p>
+
+                <p>Podrás cambiarlo por cualquier otro producto de igual valor o varios productos que sumen el monto del
+                    mismo. En caso de que superen al valor del comprado, la diferencia será abonada al momento del cambio o
+                    a través de un link de pago.</p>
+
+                <p>No se permite cambiar el producto por el mismo modelo y mismo talle, salvo que se deba a una falla en el
+                    producto.</p>
+
+                <p>No aceptamos devoluciones de ropa interior (socks, boxers, top, tapabocas, etc) por motivos de higiene.</p>
+
+                <p>También podes realizar el cambio o devolución en nuestros locales habilitados para tal fin.</p>
+
+                <p>Recordá que los costos de cambio de los productos están a cargo del cliente, por lo que te sugerimos
+                    chequear bien las características de los mismos antes de realizar tu compra. Además, los cambios están
+                    sujetos a disponibilidad del stock del producto solicitado. Una vez que lleguen los productos a cambiar,
+                    verificaremos su estado y te cotizaremos el reenvío. El cargo de envío no se cobrará en caso de que la
+                    devolución sea por producto defectuoso o error en el producto enviado.</p>
+
+                <p>En caso de que hayamos cambiado el precio del producto y estar dentro del plazo de 30 días, se
+                    considerará el precio a la fecha de compra que figura en el ticket u orden.</p>
+
+                <p>En el caso de eventos especiales, como el Kongo Sale, se reconocerá el valor de compra vigente ese día
+                    como referencia para cambios o devoluciones. Es decir, si se realizó la compra durante el evento se
+                    respetarán los precios vigentes de esas fechas, pero de hacerlo fuera de ese periodo, se ajustaran a los
+                    correspondientes al día de la compra.</p>
+
+                <p>El reintegro será realizado, luego de ser aprobado, mediante el mismo medio de pago elegido por el
+                    cliente al momento de la compra. Habiendo autorizado el reintegro solicitado, todo reclamo vinculado a
+                    la devolución del importe abonado deberá ser gestionado directamente ante el medio de pago empleado.</p>
+
+                
             </div>
         </div>
 
@@ -223,8 +271,8 @@
     </main>
 
 
-    <footer class="footer border-top mt-2">
-        <div class="container text-center">
+    <footer class="footer border-top mt-4">
+        <div class="container text-center mt-4">
             <div class="row g-0 pb-3">
                 <div class="col-12 col-md-6 col-xl-3 ">
                     <img class="headerImg" src="../imagenes/Logo.png" alt="Logo Astro">
