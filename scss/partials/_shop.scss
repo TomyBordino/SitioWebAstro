@@ -1,0 +1,75 @@
+/*Shop*/
+
+.priceConf {
+    font-weight: bolder;
+  }
+  
+  .cardShop {
+    box-sizing: border-box;
+    width: 300px;
+    height: 580px;
+    background: white;
+    border: 1px solid white;
+    backdrop-filter: blur(6px);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    display: flex;
+    font-weight: 500;
+    align-items: first baseline;
+    flex-direction: column;
+    justify-content: first baseline;
+    user-select: none;
+    color: black;
+  
+    &:hover {
+      border: 0.2px solid black;
+      transform: scale(1.05);
+  
+      /*display: block;*/
+    }
+  }
+  
+  .CajaProductosShopShadow {
+    display: none;
+  }
+  
+  .cardShop:hover .CajaProductosShopShadow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FAF8F7;
+  }
+  
+  .contentCardShop {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 1400px;
+  }
+  
+  .imgCard {
+    height: 74%;
+    width: 100%;
+  
+    /*border-radius: 17px;*/
+  }
+  
+  .buttonShop {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 5px;
+    color: #e8e8e8;
+    z-index: 1;
+    background: #212121;
+    position: relative;
+    font-weight: 600;
+    font-size: 13px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    overflow: hidden;
+  }
+  
+  /*--------------------------------*/

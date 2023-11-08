@@ -1,0 +1,63 @@
+/*Media Querys*/
+@media (max-width: 1400px) {
+    .headerShadow {
+      display: block;
+    }
+  
+    .headerShadowOcultar {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 1295px) {
+    .contentCardShopInicio {
+      width: 900px;
+    }
+  }
+  
+  @media (max-width: 762px) {
+    .info-inicio {
+      height: 120px;
+    }
+  
+    .imagenInicioShadowPrincipal {
+      display: none;
+    }
+  
+    .imagenInicioShadow {
+      display: block;
+    }
+  
+    .ocultarInfoBanner {
+      display: none;
+    }
+  
+    .info-inicio {
+      h5 {
+        font-size: 1rem;
+      }
+  
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  
+    .containerMasInfo {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .map {
+      width: 360px;
+      height: 270px;
+    }
+  }
+  
+  @media (max-width: 530px) {
+    .imgSN {
+      width: 100%;
+    }
+  }
+  
+  /*-----------------------------------------*/

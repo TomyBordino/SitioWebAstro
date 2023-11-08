@@ -1,0 +1,121 @@
+/*Inicio*/
+
+.imagenInicio {
+    width: 100%;
+  }
+  
+  .imagenInicioShadow {
+    display: none;
+  }
+  
+  .imgCardInicio {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .info-inicio {
+    background-color: black;
+    height: 150px;
+  }
+  
+  .containerMasInfo {
+    height: 150px;
+    background-color: white;
+  }
+  
+  .confInfoBanner {
+    margin-top: 15px;
+  }
+  
+  .card-Inicio-Secciones {
+    height: 450px;
+    width: 330px;
+    transition: transform 0.7s cubic-bezier(0.275, 0.885, 0.32, 1.275);
+  
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+  
+  .contenedorCentradoTextImg {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .contentCardDestacadosSeccion {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+    width: 1400px;
+  }
+  
+  .centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: 'Noto Serif';
+  }
+  
+  .containerNewsletter {
+    background-color: #f6f5f3;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Input contenedor */
+  
+  .input-container {
+    width: 300px;
+    position: relative;
+    margin: 20px;
+  }
+  
+  /* Input field */
+  
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  /* Input label */
+  
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #4E008E;
+    transition: all 0.3s ease;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
