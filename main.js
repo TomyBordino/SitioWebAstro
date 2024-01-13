@@ -9,25 +9,25 @@ let buzo1 = new Producto(
     1,
     "Buzo Astro White",
     25000,
-    "/imagenes/imagen8.jpeg"
+    "imagenes/imagen8.jpeg"
 );
 let buzo2 = new Producto(
     2,
     "Buzo Astro",
     23000,
-    "/imagenes/imagen7.jpeg"
+    "imagenes/imagen7.jpeg"
 );
 let buzo3 = new Producto(
     3,
     "Buzo Astro Black",
     24000,
-    "/imagenes/imagen5.jpeg"
+    "imagenes/imagen5.jpeg"
 );
 let buzo4 = new Producto(
     4,
     "Buzo Astro Black",
     30000,
-    "/imagenes/imagen1.jpeg"
+    "imagenes/imagen1.jpeg"
 );
 
 const productos = [buzo1,buzo2,buzo3,buzo4];
