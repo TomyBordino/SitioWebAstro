@@ -71,8 +71,8 @@
                         </div>
 
                         <form class="confRightHeader" action="">
-                            <a class="iconPosition" href=""><i class="bi bi-person-circle"></i></a>
-                            <a class="iconPosition" href=""><i class="bi bi-cart-plus-fill"></i></a>
+                            <a class="iconPosition"><i class="bi bi-person-circle"></i></a>
+                            <a id="botonCarrito" class="iconPosition"><i class="bi bi-cart-plus-fill"></i></a>
 
                             <div class="input-container">
                                 <input type="text" name="text" class="input mt-3" placeholder="search...">
@@ -148,8 +148,8 @@
         </div>
         <!-- Destacados Productos -->
         <div class="containerAyuda">
-            <div class="contentCardShop contentCardShopInicio">
-                <div class="cardShop" data-aos="fade-up" data-aos-duration="1500">
+            <div  id="contenedorDestacados" class="contentCardShop contentCardShopInicio" data-aos="fade-up" data-aos-duration="1500">
+                <!-- <div class="cardShop" data-aos="fade-up" data-aos-duration="1500">
                     <img class="imgCard" src="imagenes/imagen8.jpeg" alt="">
 
                     <div class="ps-2 pt-2">
@@ -206,7 +206,7 @@
                     <div class="CajaProductosShopShadow ps-2">
                         <button class="buttonShop">COMPRAR </button>
                     </div>
-                </div>
+                </div>---->
             </div>
         </div>
         <!-- ------------------------------------------------------------------>
@@ -215,7 +215,7 @@
             <div class="contentCardDestacadosSeccion mb-5 pb-5 border-bottom border-1">
                 <div class="card-Inicio-Secciones contenedorCentradoTextImg sombra">
                     <a href="pages/shop.html">
-                        <img class="imgCardInicio" src="imagenes/Buzo1.png" alt="Imagen Destacados Buzos">
+                        <img class="imgCardInicio" src="imagenes/Buzo1.png" alt="Imagen Destacados Buzos" >
                         <h2 class="centrado">BUZOS</h2>
                     </a>
                 </div>
@@ -269,6 +269,7 @@
             <button type="button" class="btn btn-dark">Suscribirse</button>
         </div>
         <!-- -------------------------------------------->
+
     </main>
     <!-- Footer -->
     <footer class="mt-4">
@@ -304,6 +305,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
