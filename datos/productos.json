@@ -1,0 +1,26 @@
+[{
+    "id":1,
+    "nombre":"Buzo Astro White",
+    "precio":25000,
+    "imagen":"imagenes/imagen8.jpeg"
+},
+{
+    "id":2,
+    "nombre":"Buzo Astro",
+    "precio":23000,
+    "imagen":"imagenes/imagen7.jpeg"
+},
+{
+    "id":3,
+    "nombre":"Buzo Astro Black",
+    "precio":24000,
+    "imagen":"imagenes/imagen5.jpeg"
+},
+{
+    "id":4,
+    "nombre":"Hoodie Astro",
+    "precio":30000,
+    "imagen":"imagenes/imagen1.jpeg"
+}
+
+]

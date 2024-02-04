@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="scss/estilo.css">
     <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon">
@@ -72,7 +73,7 @@
 
                         <form class="confRightHeader" action="">
                             <a class="iconPosition"><i class="bi bi-person-circle"></i></a>
-                            <a id="botonCarrito" class="iconPosition"><i class="bi bi-cart-plus-fill"></i></a>
+                            <a id="botonCarrito" class="iconPosition ver-carrito"><i class="bi bi-cart-plus-fill"></i></a>
 
                             <div class="input-container">
                                 <input type="text" name="text" class="input mt-3" placeholder="search...">
@@ -110,6 +111,8 @@
     </header>
 
     <main>
+
+        <div id="carritoContent" class="modal-container"></div>
 
         <div class="container-fluid g-0">
 
@@ -149,64 +152,6 @@
         <!-- Destacados Productos -->
         <div class="containerAyuda">
             <div  id="contenedorDestacados" class="contentCardShop contentCardShopInicio" data-aos="fade-up" data-aos-duration="1500">
-                <!-- <div class="cardShop" data-aos="fade-up" data-aos-duration="1500">
-                    <img class="imgCard" src="imagenes/imagen8.jpeg" alt="">
-
-                    <div class="ps-2 pt-2">
-                        <p>Buzo Astro White</p>
-                    </div>
-
-                    <div class="ps-2 priceConf">
-                        <p>$25.000</p>
-                    </div>
-                    <div class="CajaProductosShopShadow ps-2">
-                        <button class="buttonShop">COMPRAR </button>
-                    </div>
-                </div>
-
-                <div class="cardShop" data-aos="fade-up" data-aos-duration="1500">
-                    <img class="imgCard" src="imagenes/imagen7.jpeg" alt="">
-
-                    <div class="ps-2 pt-2">
-                        <p>Buzo Astro</p>
-                    </div>
-
-                    <div class="ps-2 priceConf">
-                        <p>$23.000</p>
-                    </div>
-                    <div class="CajaProductosShopShadow ps-2">
-                        <button class="buttonShop">COMPRAR </button>
-                    </div>
-                </div>
-
-                <div class="cardShop" data-aos="fade-up" data-aos-duration="1500">
-                    <img class="imgCard" src="imagenes/imagen5.jpeg" alt="">
-
-                    <div class="ps-2 pt-2">
-                        <p>Buzo Astro Black</p>
-                    </div>
-
-                    <div class="ps-2 priceConf">
-                        <p>$24.000</p>
-                    </div>
-                    <div class="CajaProductosShopShadow ps-2">
-                        <button class="buttonShop">COMPRAR </button>
-                    </div>
-                </div>
-                <div class="cardShop" data-aos="fade-up" data-aos-duration="1500">
-                    <img class="imgCard" src="imagenes/imagen1.jpeg" alt="">
-
-                    <div class="ps-2 pt-2">
-                        <p>Hoodie Astro White </p>
-                    </div>
-
-                    <div class="ps-2 priceConf">
-                        <p>$30.000</p>
-                    </div>
-                    <div class="CajaProductosShopShadow ps-2">
-                        <button class="buttonShop">COMPRAR </button>
-                    </div>
-                </div>---->
             </div>
         </div>
         <!-- ------------------------------------------------------------------>
@@ -305,6 +250,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="main.js"></script>
 </body>
 

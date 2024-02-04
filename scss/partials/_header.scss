@@ -63,7 +63,112 @@
   .input-container:hover > .icon {
     animation: anim 1s linear infinite;
   }
+
+  .modal-container {
+    width: 30%;
+    height: 100%;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow: auto;
+    z-index: -10;
+    top: 0.1vh;
+    scrollbar-color: none;
   
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .carritoVisible{
+    z-index: 100;
+  }
+  
+  .modal-header {
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .modal-header-title {
+    justify-self: start;
+  }
+  
+  .modal-header-button {
+    cursor: pointer;
+  }
+  
+  .modal-container > {
+    .modal-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 95%;
+      margin: 15px;
+    }
+  
+    div > img {
+      height: 100%;
+      width: 25%;
+    }
+  }
+  
+  .total-content {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    .modal-container {
+      width: 100%;
+      margin: 0;
+      min-height: 88vh;
+  
+      > {
+        .modal-content {
+          justify-content: space-between;
+          width: 100%;
+          margin: 2px;
+        }
+  
+        div > img {
+          height: 80px;
+          width: 80px;
+        }
+      }
+    }
+  }
+  
+  .delete-product {
+    cursor: pointer;
+  }
+  
+  .cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+  }
+  
+  .sumar, .restar {
+    cursor: pointer;
+  }
+  
+
+
   @keyframes anim {
     0%,
     100% {
