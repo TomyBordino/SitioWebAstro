@@ -1,11 +1,5 @@
-
-/*let carrito = [];
-let carritoStorage = localStorage.getItem("carrito");
-
-//Si el carrito Storage tiene Algo carrito agarra la info del JSON
-if (carritoStorage) {
-    carrito = JSON.parse(carritoStorage);
-}*/
+//Si el carrito Esta vacio instanciamos un array vacio, si contiene algun producto entonces le asignamos esos productos a
+//nuestra variable carrito
 
 JSON.parse(localStorage.getItem("carrito")) === null && localStorage.setItem("carrito", JSON.stringify([]))
 
@@ -13,13 +7,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito"))
 
 //Location.reload(); RECARGA LA PAGINA
 //LocalStorage.clear(); //Borra el storage
-//VER MAS ADELANTE COMO LO CAMBIAMOS
-/*let botonCarrito = document.getElementById("botonCarrito");
-botonCarrito.addEventListener("click", () => {
-    localStorage.clear();
-    location.reload();
-});
-*/
+
 //Funcion para Agregar Productos al Carrito
 
 const agregarProducto = (id) => {
@@ -41,6 +29,7 @@ const agregarProducto = (id) => {
                     cantidad: 1
 
                 }
+
                 carrito.push(nuevoProductoCarrito)
                 //Se agrega al Storage el Producto seleccionado
                 localStorage.setItem("carrito", JSON.stringify(carrito));
@@ -49,8 +38,7 @@ const agregarProducto = (id) => {
                 const indexProductoCarrito = carrito.findIndex((producto) => producto.id === id)
 
                 carrito[indexProductoCarrito].cantidad++
-                carrito[indexProductoCarrito].precio = precio * carrito[indexProductoCarrito].cantidad
-
+                
                 localStorage.setItem("carrito", JSON.stringify(carrito));
             }
 
@@ -60,45 +48,46 @@ const agregarProducto = (id) => {
             Toastify({
 
                 text: "Producto Agregado al Carrito Correctamente",
-                
                 duration: 3000,
                 position: "center"
                 }).showToast();
         })
 }
+
+//Elementos Traidos del HTML para hacer funcionar el carrito
 let botonCarrito = document.getElementById("botonCarrito");
-const modalContainer = document.getElementById("carritoContent");
+const contenidoDelCarrito = document.getElementById("carritoContent");
 
 
 
-
+//Codigo para Visualizar el carrito de Compras
 const mostrarCarrito = () => {
-    //
-    modalContainer.innerHTML = "";
-    modalContainer.style.display = "flex";
-    const modalHeader = document.createElement("div");
-    modalHeader.className = "modal-header";
-    modalHeader.innerHTML = `
+    
+    contenidoDelCarrito.innerHTML = "";
+    contenidoDelCarrito.style.display = "flex";
+    const headerCarrito = document.createElement("div");
+    headerCarrito.className = "modal-header";
+    headerCarrito.innerHTML = `
     <h1 class="modal-header-title">Carrito</h1>
     `;
-    modalContainer.append(modalHeader);
-    modalContainer.classList.add('carritoVisible')
+    contenidoDelCarrito.append(headerCarrito);
+    contenidoDelCarrito.classList.add('carritoVisible')
 
-    const modalButton = document.createElement("h1");
-    modalButton.innerText = "x";
-    modalButton.className = "modal-header-button";
+    const botonCierreCarrito = document.createElement("h1");
+    botonCierreCarrito.innerText = "x";
+    botonCierreCarrito.className = "modal-header-button";
 
     //Estilos Boton cerrar
-    modalButton.addEventListener("click", () => {
-        modalContainer.style.display = "none";
+    botonCierreCarrito.addEventListener("click", () => {
+        contenidoDelCarrito.style.display = "none";
     });
 
-    modalHeader.append(modalButton);
+    headerCarrito.append(botonCierreCarrito);
 
-    //Recorremos el carrito
+    //Recorremos el carrito y por cada producto se crea una card que mostrara el mismo en el apartado carrito
     carrito.forEach((producto) => {
         let carritoContent = document.createElement("div");
-        carritoContent.className = "modal-content";
+        carritoContent.className = "configItem";
         carritoContent.innerHTML = `
         <img src="${producto.imagen}">
         <h2>${producto.nombre}</h2>
@@ -110,13 +99,15 @@ const mostrarCarrito = () => {
         <span class ="delete-product">x</span>
         `;
 
-        modalContainer.append(carritoContent);
+        //lo agregamos al modalContainer
+        contenidoDelCarrito.append(carritoContent);
 
         let restar = carritoContent.querySelector(".restar");
 
         restar.addEventListener("click", () => {
             if (producto.cantidad !== 1) {
                 producto.cantidad--;
+                
             }
             localStorage.setItem("carrito", JSON.stringify(carrito));
             mostrarCarrito();
@@ -143,7 +134,7 @@ const mostrarCarrito = () => {
     const totalCarrito = document.createElement("div");
     totalCarrito.className = "total-content";
     totalCarrito.innerHTML = `Total: $${total}`;
-    modalContainer.append(totalCarrito);
+    contenidoDelCarrito.append(totalCarrito);
 };
 
 const eliminarProducto = (id) => {
@@ -152,11 +143,10 @@ const eliminarProducto = (id) => {
     carrito = carrito.filter((carritoId) => {
         return carritoId !== idProducto;
     });
-
-
     localStorage.setItem("carrito", JSON.stringify(carrito));
     mostrarCarrito();
 }
+
 
 
 

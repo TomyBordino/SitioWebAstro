@@ -94,8 +94,13 @@ h2, .titleAyuda, h3 {
   animation: anim 1s linear infinite;
 }
 
-.modal-container {
-  width: 30%;
+.positionCarrito {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.carritoContainer {
+  width: 550px;
   height: 100%;
   color: black;
   background-color: white;
@@ -107,7 +112,7 @@ h2, .titleAyuda, h3 {
   top: 0.1vh;
   scrollbar-color: none;
 }
-.modal-container::-webkit-scrollbar {
+.carritoContainer::-webkit-scrollbar {
   display: none;
 }
 
@@ -131,7 +136,7 @@ h2, .titleAyuda, h3 {
   cursor: pointer;
 }
 
-.modal-container > .modal-content {
+.carritoContainer > .configItem {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -139,9 +144,18 @@ h2, .titleAyuda, h3 {
   width: 95%;
   margin: 15px;
 }
-.modal-container > div > img {
+.carritoContainer > div > img {
   height: 100%;
   width: 25%;
+}
+.carritoContainer > div > h2 {
+  font-size: 1.5rem;
+}
+.carritoContainer > div > p {
+  font-size: 1.3rem;
+}
+.carritoContainer > div > span {
+  font-size: 1.3rem;
 }
 
 .total-content {
@@ -153,35 +167,23 @@ h2, .titleAyuda, h3 {
 }
 
 @media only screen and (max-width: 750px) {
-  .modal-container {
+  .carritoContainer {
     width: 100%;
     margin: 0;
     min-height: 88vh;
   }
-  .modal-container > .modal-content {
+  .carritoContainer > .configItem {
     justify-content: space-between;
     width: 100%;
     margin: 2px;
   }
-  .modal-container > div > img {
+  .carritoContainer > div > img {
     height: 80px;
     width: 80px;
   }
 }
 .delete-product {
   cursor: pointer;
-}
-
-.cantidad-carrito {
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  font-size: 12px;
-  padding: 4px;
-  top: 37px;
-  right: 14px;
-  position: absolute;
-  display: none;
 }
 
 .sumar, .restar {
